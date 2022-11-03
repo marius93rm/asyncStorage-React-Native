@@ -7,7 +7,8 @@ export default function Input({placeholder, onSubmitEditing}) {
     return (
         <TextInput 
             style={styles.input}
-            value={placeholder}
+            value={text}
+            placeholder={placeholder}
             onChangeText={(text) => setText(text)}
             onSubmitEditing={() => {
                 if (!text) return // Don't submit if empty
